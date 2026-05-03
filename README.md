@@ -1,66 +1,72 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🎓 EduFlow ERP: Automated Institute Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-10.x-FF2D20?style=for-the-badge&logo=laravel)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript)
 
-## About Laravel
+**EduFlow ERP** is a high-performance, fully automated Institutional Resource Planning system designed to streamline academic workflows. It transforms manual administrative tasks into a seamless digital ecosystem, managing everything from departmental hierarchies to intelligent student lifecycle transitions.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Key Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🏛️ Department & Academic Management
+* **Specialization Control:** Manage departments like Software Engineering, Networking, and more.
+* **Subject Matrix:** Intelligent course management with a distinction between **Theoretical** and **Practical** modules.
+* **Faculty Assignment:** Advanced module for assigning one or multiple instructors to specific subjects.
 
-## Learning Laravel
+### 🤖 The Automation Engine (Smart Logic)
+The core of EduFlow ERP is its **Automated Transition Engine**. It eliminates manual grading errors through:
+* **Auto-Grading Logic:** Real-time calculation of pass/fail status upon grade entry.
+* **Smart Routing:** * **Successful Students:** Automatically moved to advanced data display records.
+    * **Unsuccessful Students:** Instantly migrated to the **Supplementary Exam System** (التكميلي) based on predefined academic rules.
+* **Conflict Validation:** Built-in validation to ensure data integrity during automated migrations.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 📊 Advanced Analytics Dashboard
+A comprehensive data visualization hub for administrators providing:
+* Real-time **Success/Failure** percentage charts.
+* Live counters for total students, faculty members, and active courses.
+* Objection tracking metrics to monitor student satisfaction.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 📩 Interaction & Notifications
+* **Student Portal:** Clean UI for students to view grades and academic status.
+* **Objection System:** Students can raise appeals/objections directly from their dashboard.
+* **Admin Notifications:** Real-time alerts for administrators when new objections are submitted.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 🏗️ System Architecture & Design
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+To ensure a deep understanding of the system's complexity, we have documented the logic flow and database structure below.
 
-### Premium Partners
+### 1. Conceptual Logic Flow (System Logic)
+This diagram illustrates the business logic, entity relationships, and the automated "Success/Fail" path.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+![Conceptual Model](docs/conceptual-logic.jpg)
 
-## Contributing
+### 2. Physical Database Schema (Technical Structure)
+The technical blueprint showing the 12+ interconnected tables, data types, and relational constraints in MySQL.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+![Database Schema](docs/database-schema.png)
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🛠️ Tech Stack
 
-## Security Vulnerabilities
+| Layer | Technology |
+| :--- | :--- |
+| **Backend** | Laravel (PHP 8.x) |
+| **Frontend** | Blade Engine, HTML5, CSS3 |
+| **Styling** | Bootstrap 5 |
+| **Interactivity** | JavaScript (Vanilla & AJAX) |
+| **Database** | MySQL |
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## ⚙️ Installation & Setup
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/CWD2500/EduFlow-ERP.git](https://github.com/CWD2500/EduFlow-ERP.git)
+   cd EduFlow-ERP
